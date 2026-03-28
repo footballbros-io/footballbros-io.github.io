@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Privacy Policy – Football Bros</title>
+  <meta name="description" content="Privacy Policy for Football Bros (footballbros-io.github.io). Learn how we handle your data when you play Football Bros online." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://footballbros-io.github.io/privacy.html" />
+
+  <!-- OG -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://footballbros-io.github.io/privacy.html" />
+  <meta property="og:title" content="Privacy Policy – Football Bros" />
+  <meta property="og:description" content="Privacy Policy for Football Bros – the free online browser football game." />
+  <meta property="og:image" content="https://footballbros-io.github.io/og-image.png" />
+  <meta property="og:site_name" content="Football Bros" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <meta name="theme-color" content="#DC1E1E" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Privacy Policy – Football Bros",
+    "url": "https://footballbros-io.github.io/privacy.html",
+    "description": "Privacy Policy for Football Bros online game site.",
+    "isPartOf": { "@id": "https://footballbros-io.github.io/#website" },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://footballbros-io.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "Privacy Policy", "item": "https://footballbros-io.github.io/privacy.html" }
+      ]
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --red:      #DC1E1E;
+      --red-dark: #A81010;
+      --gold:     #FFB800;
+      --green:    #1A6B1A;
+      --white:    #FFFFFF;
+      --off-white:#F0F4F0;
+      --dark:     #0A0E0A;
+      --dark-card:#111811;
+      --gray:     #888E88;
+      --shadow:   0 8px 40px rgba(0,0,0,.6);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--dark);
+      color: var(--off-white);
+      font-family: 'Barlow', sans-serif;
+      overflow-x: hidden;
+      line-height: 1.7;
+    }
+
+    /* Field texture */
+    body::before {
+      content: '';
+      position: fixed; inset: 0; z-index: 0;
+      background:
+        repeating-linear-gradient(0deg,
+          transparent 0px, transparent 78px,
+          rgba(255,255,255,.03) 78px, rgba(255,255,255,.03) 80px),
+        repeating-linear-gradient(90deg,
+          transparent 0px, transparent 118px,
+          rgba(255,255,255,.02) 118px, rgba(255,255,255,.02) 120px),
+        linear-gradient(160deg, #0A1A0A 0%, #0E2A0E 40%, #0A1A0A 100%);
+      pointer-events: none;
+    }
+
+    .page { position: relative; z-index: 1; }
+
+    /* ── TOP BAR ── */
+    .topbar {
+      background: linear-gradient(90deg, var(--red-dark), var(--red), var(--red-dark));
+      text-align: center;
+      padding: 6px 16px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--white);
+      border-bottom: 2px solid var(--gold);
+    }
+
+    /* ── NAV ── */
+    nav.site-nav {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .nav-logo {
+      font-family: 'Russo One', sans-serif;
+      font-size: 1.4rem;
+      color: var(--white);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo img {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      border: 2px solid var(--gold);
+    }
+
+    .nav-logo span { color: var(--gold); }
+
+    .nav-play {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: linear-gradient(135deg, var(--red), var(--red-dark));
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 8px 22px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 18px rgba(220,30,30,.45);
+      transition: transform .15s, box-shadow .15s;
+    }
+
+    .nav-play:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(220,30,30,.65); }
+
+    /* ── HERO ── */
+    .hero {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 10px 20px 36px;
+    }
+
+    .breadcrumb {
+      font-size: 12px;
+      color: var(--gray);
+      margin-bottom: 24px;
+    }
+
+    .breadcrumb a { color: var(--gray); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--white); }
+    .breadcrumb span { margin: 0 6px; }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(220,30,30,.12);
+      border: 1px solid rgba(220,30,30,.35);
+      border-radius: 50px;
+      padding: 5px 16px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .page-title {
+      font-family: 'Russo One', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      color: var(--white);
+      line-height: 1.1;
+      text-shadow: 2px 2px 0 var(--red-dark);
+      margin-bottom: 12px;
+    }
+
+    .page-title span { color: var(--gold); }
+
+    .hero-meta {
+      font-size: 13px;
+      color: var(--gray);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 20px;
+    }
+
+    .hero-meta strong { color: var(--off-white); }
+
+    .divider {
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--red), var(--gold), transparent);
+      margin: 28px 0;
+      max-width: 860px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ── MAIN CONTENT ── */
+    .content-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 32px;
+      align-items: start;
+    }
+
+    /* ── STICKY TOC ── */
+    .toc {
+      position: sticky;
+      top: 24px;
+      background: var(--dark-card);
+      border: 1px solid rgba(255,255,255,.07);
+      border-left: 3px solid var(--red);
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .toc h4 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 14px;
+    }
+
+    .toc ol {
+      list-style: none;
+      counter-reset: toc-counter;
+    }
+
+    .toc li {
+      counter-increment: toc-counter;
+      margin-bottom: 6px;
+    }
+
+    .toc li::before {
+      content: counter(toc-counter) ". ";
+      color: var(--red);
+      font-weight: 700;
+      font-size: 12px;
+    }
+
+    .toc a {
+      color: #A0A8A0;
+      text-decoration: none;
+      font-size: 13px;
+      transition: color .15s;
+      line-height: 1.4;
+    }
+
+    .toc a:hover { color: var(--white); }
+
+    /* ── ARTICLE ── */
+    article.policy {
+      min-width: 0;
+    }
+
+    .policy section {
+      background: var(--dark-card);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 14px;
+      padding: 28px 30px;
+      margin-bottom: 20px;
+      scroll-margin-top: 24px;
+    }
+
+    .policy section h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .policy section h2 .sec-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px; height: 28px;
+      background: var(--red);
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 900;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+
+    .policy p {
+      font-size: 15px;
+      color: #A8B4A8;
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .policy p:last-child { margin-bottom: 0; }
+
+    .policy ul, .policy ol {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    .policy li {
+      font-size: 14.5px;
+      color: #A8B4A8;
+      line-height: 1.7;
+      margin-bottom: 5px;
+    }
+
+    .policy h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: .5px;
+      color: var(--off-white);
+      margin: 18px 0 8px;
+    }
+
+    .policy a {
+      color: var(--red);
+      text-decoration: none;
+    }
+
+    .policy a:hover { text-decoration: underline; }
+
+    /* highlight box */
+    .highlight-box {
+      background: rgba(220,30,30,.08);
+      border: 1px solid rgba(220,30,30,.25);
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #C8D4C8;
+    }
+
+    .highlight-box strong { color: var(--gold); }
+
+    /* contact card */
+    .contact-card {
+      background: rgba(255,184,0,.06);
+      border: 1px solid rgba(255,184,0,.2);
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin-top: 16px;
+    }
+
+    .contact-card p { color: #B8C4B8; font-size: 14px; margin-bottom: 6px; }
+    .contact-card a { color: var(--gold); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #050805;
+      border-top: 2px solid rgba(255,255,255,.05);
+      padding: 36px 20px;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-family: 'Russo One', sans-serif;
+      font-size: 1.5rem;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .footer-logo span { color: var(--gold); }
+
+    footer p { font-size: 13px; color: var(--gray); max-width: 500px; margin: 0 auto 14px; }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px 20px;
+      font-size: 12px;
+    }
+    .footer-links a { color: var(--gray); text-decoration: none; transition: color .15s; }
+    .footer-links a:hover { color: var(--red); }
+    .footer-links a.active { color: var(--gold); }
+
+    .footer-copy { margin-top: 20px; font-size: 11px; color: #444; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 680px) {
+      .content-wrap {
+        grid-template-columns: 1fr;
+      }
+      .toc { position: static; }
+    }
+  </style>
+</head>
+
+<body>
+<div class="page">
+
+  <!-- TOP BAR -->
+  <div class="topbar">🏈 &nbsp; Football Bros – Play Free Online &nbsp; 🏈</div>
+
+  <!-- NAV -->
+  <nav class="site-nav" aria-label="Site navigation">
+    <a href="/" class="nav-logo">
+      <img src="football-bros-game-icon.webp" alt="Football Bros icon" width="36" height="36" />
+      Football<span>Bros</span>
+    </a>
+    <a href="/" class="nav-play">▶ &nbsp;Play Now</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a><span>›</span>
+      <strong>Privacy Policy</strong>
+    </nav>
+    <div class="hero-badge">📄 Legal</div>
+    <h1 class="page-title">Privacy<span> Policy</span></h1>
+    <div class="hero-meta">
+      <span>🌐 <strong>footballbros-io.github.io</strong></span>
+      <span>📅 Effective: <strong>March 28, 2025</strong></span>
+      <span>🔄 Last updated: <strong>March 28, 2025</strong></span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- CONTENT -->
+  <div class="content-wrap">
+
+    <!-- TOC -->
+    <aside class="toc" aria-label="Table of contents">
+      <h4>Contents</h4>
+      <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#data-collected">Data We Collect</a></li>
+        <li><a href="#cookies">Cookies</a></li>
+        <li><a href="#third-party">Third-Party Services</a></li>
+        <li><a href="#game-iframe">Embedded Game</a></li>
+        <li><a href="#childrens">Children's Privacy</a></li>
+        <li><a href="#your-rights">Your Rights</a></li>
+        <li><a href="#data-security">Data Security</a></li>
+        <li><a href="#external-links">External Links</a></li>
+        <li><a href="#changes">Policy Changes</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ol>
+    </aside>
+
+    <!-- ARTICLE -->
+    <article class="policy">
+
+      <section id="overview">
+        <h2><span class="sec-num">1</span> Overview</h2>
+        <p>
+          Welcome to <strong>Football Bros</strong> ("we," "us," or "our"), accessible at
+          <a href="https://footballbros-io.github.io/">https://footballbros-io.github.io/</a>.
+          This Privacy Policy explains how we handle information when you visit our website and play
+          Football Bros online.
+        </p>
+        <p>
+          We are committed to protecting your privacy. Football Bros is a free browser-based gaming
+          website. We do not sell your personal data, run advertising networks, or require account
+          creation to use our service.
+        </p>
+        <div class="highlight-box">
+          <strong>🏈 Short version:</strong> We collect minimal data, we don't sell it, and you can
+          play Football Bros without creating an account or providing any personal information.
+        </div>
+        <p>
+          By accessing or using Football Bros, you agree to the terms of this Privacy Policy. If you
+          disagree with any part of this policy, please discontinue use of the site.
+        </p>
+      </section>
+
+      <section id="data-collected">
+        <h2><span class="sec-num">2</span> Data We Collect</h2>
+
+        <h3>Information You Provide</h3>
+        <p>
+          Football Bros does not require you to create an account or submit any personal information to
+          play the game. We do not collect your name, email address, phone number, or any other
+          personally identifiable information unless you voluntarily contact us.
+        </p>
+
+        <h3>Information Collected Automatically</h3>
+        <p>
+          Like most websites, our hosting provider (GitHub Pages) may automatically collect certain
+          technical information when you visit the site, including:
+        </p>
+        <ul>
+          <li>Your IP address (anonymised by GitHub's infrastructure)</li>
+          <li>Browser type and version</li>
+          <li>Operating system</li>
+          <li>Referring URL (the page that linked you here)</li>
+          <li>Pages visited and time spent on the site</li>
+          <li>Date and time of your visit</li>
+        </ul>
+        <p>
+          This data is collected automatically by the GitHub Pages infrastructure and is used solely for
+          the operation and security of the hosting service. We do not have direct access to raw server
+          logs at the individual-user level.
+        </p>
+
+        <h3>Star Ratings</h3>
+        <p>
+          The star rating widget on our homepage is processed entirely within your browser session.
+          Rating data is not transmitted to any server and is not stored beyond your current visit.
+        </p>
+      </section>
+
+      <section id="cookies">
+        <h2><span class="sec-num">3</span> Cookies &amp; Local Storage</h2>
+        <p>
+          Football Bros does not use its own tracking cookies or advertising cookies. Our website
+          itself does not set any first-party cookies on your device.
+        </p>
+        <p>
+          However, the following may result in cookies or storage being set:
+        </p>
+        <ul>
+          <li>
+            <strong>Google Fonts:</strong> We load web fonts from Google Fonts. Google may set a
+            short-lived cookie to optimise font delivery. See
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.
+          </li>
+          <li>
+            <strong>Embedded game (iframe):</strong> The Football Bros game is served from a
+            third-party domain. That provider may use cookies or local storage for game state
+            and session management. Please refer to Section 5 for more details.
+          </li>
+          <li>
+            <strong>GitHub Pages:</strong> GitHub, our hosting provider, may use cookies for
+            security and infrastructure purposes.
+          </li>
+        </ul>
+        <p>
+          You can control cookie behaviour through your browser settings. Most modern browsers allow
+          you to block, delete, or get notifications about cookies. Note that disabling cookies may
+          affect the functionality of the embedded game.
+        </p>
+      </section>
+
+      <section id="third-party">
+        <h2><span class="sec-num">4</span> Third-Party Services</h2>
+        <p>
+          Football Bros relies on a small number of third-party services to deliver the website. Each
+          third party operates under its own privacy policy, which we encourage you to review:
+        </p>
+        <ul>
+          <li>
+            <strong>GitHub Pages</strong> – Website hosting.
+            <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>
+          </li>
+          <li>
+            <strong>Google Fonts</strong> – Web font delivery.
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
+          </li>
+          <li>
+            <strong>UnblockedRush.com</strong> – Game hosting provider (iframe source).
+            Please see their privacy policy directly on their website.
+          </li>
+        </ul>
+        <p>
+          We do not use Google Analytics, Meta Pixel, or any other advertising or behavioural
+          tracking technologies on this site.
+        </p>
+      </section>
+
+      <section id="game-iframe">
+        <h2><span class="sec-num">5</span> Embedded Game (iframe)</h2>
+        <p>
+          The Football Bros game is embedded on this page via an &lt;iframe&gt; that loads content
+          from <strong>unblockedrush.com</strong>. When you interact with the game, your browser
+          communicates directly with their servers.
+        </p>
+        <p>
+          We do not control the data practices of UnblockedRush.com. Their platform may:
+        </p>
+        <ul>
+          <li>Collect your IP address and browser information for game delivery</li>
+          <li>Store game progress or settings in your browser's local storage or cookies</li>
+          <li>Display advertisements within the game environment</li>
+        </ul>
+        <div class="highlight-box">
+          <strong>⚠️ Note:</strong> If you prefer not to have data collected by the game provider,
+          you may choose not to interact with the embedded game iframe.
+        </div>
+        <p>
+          We recommend reviewing <strong>UnblockedRush.com's privacy policy</strong> for complete
+          details about their data practices.
+        </p>
+      </section>
+
+      <section id="childrens">
+        <h2><span class="sec-num">6</span> Children's Privacy</h2>
+        <p>
+          Football Bros is an all-ages game, and our website is designed to be family-friendly.
+          We do not knowingly collect any personal information from children under the age of 13
+          (or the applicable age of digital consent in your jurisdiction).
+        </p>
+        <p>
+          Because we do not collect personal information through our own site, we believe our
+          service is compliant with the Children's Online Privacy Protection Act (COPPA) and similar
+          regulations. If you are a parent or guardian and believe your child has provided personal
+          information to us, please contact us at the details below and we will promptly address it.
+        </p>
+        <p>
+          Parents should be aware that the embedded game from UnblockedRush.com may have separate
+          data practices. We encourage parents to review their policy for any child-specific concerns.
+        </p>
+      </section>
+
+      <section id="your-rights">
+        <h2><span class="sec-num">7</span> Your Rights</h2>
+        <p>
+          Depending on your location, you may have the following rights regarding any personal
+          data that may be associated with your use of this site:
+        </p>
+        <ul>
+          <li><strong>Right to Access:</strong> Request a copy of personal data we hold about you.</li>
+          <li><strong>Right to Erasure:</strong> Request deletion of your personal data.</li>
+          <li><strong>Right to Rectification:</strong> Request correction of inaccurate data.</li>
+          <li><strong>Right to Object:</strong> Object to certain processing of your data.</li>
+          <li><strong>Right to Data Portability:</strong> Receive your data in a structured, commonly used format.</li>
+          <li><strong>Right to Withdraw Consent:</strong> Where processing is based on consent, withdraw it at any time.</li>
+        </ul>
+        <p>
+          Since we collect minimal data and do not maintain user accounts, most of these rights may
+          not be directly applicable in practice. However, we are happy to assist with any inquiries.
+          To exercise any of these rights, please contact us using the details in Section 11.
+        </p>
+        <p>
+          If you are located in the European Economic Area (EEA), you also have the right to lodge
+          a complaint with your local data protection authority (DPA).
+        </p>
+      </section>
+
+      <section id="data-security">
+        <h2><span class="sec-num">8</span> Data Security</h2>
+        <p>
+          The Football Bros website is hosted on GitHub Pages, which uses HTTPS encryption (TLS)
+          for all traffic between your browser and our server. This means data transmitted to and
+          from the website is encrypted in transit.
+        </p>
+        <p>
+          We take reasonable precautions to protect the limited data associated with this website.
+          However, no method of internet transmission or electronic storage is 100% secure. We
+          cannot guarantee absolute security.
+        </p>
+      </section>
+
+      <section id="external-links">
+        <h2><span class="sec-num">9</span> External Links</h2>
+        <p>
+          Our website may contain links to external websites, including the game provider's platform,
+          Google Fonts documentation, and GitHub. Once you leave Football Bros, we are no longer
+          responsible for the privacy practices of those websites.
+        </p>
+        <p>
+          We encourage you to read the privacy policy of any third-party website you visit. We have
+          no control over and assume no responsibility for the content, privacy policies, or practices
+          of any third-party sites or services.
+        </p>
+      </section>
+
+      <section id="changes">
+        <h2><span class="sec-num">10</span> Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time to reflect changes in our practices
+          or applicable law. When we make significant changes, we will update the "Last updated"
+          date at the top of this page.
+        </p>
+        <p>
+          We encourage you to review this page periodically to stay informed about how we are
+          protecting your information. Continued use of the site after any changes constitutes your
+          acceptance of the updated policy.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2><span class="sec-num">11</span> Contact Us</h2>
+        <p>
+          If you have any questions, concerns, or requests regarding this Privacy Policy or our
+          data practices, please don't hesitate to reach out:
+        </p>
+        <div class="contact-card">
+          <p>🌐 <strong>Website:</strong> <a href="https://footballbros-io.github.io/">footballbros-io.github.io</a></p>
+          <p>📬 <strong>GitHub:</strong> <a href="https://github.com/footballbros-io" target="_blank" rel="noopener noreferrer">github.com/footballbros-io</a></p>
+          <p style="margin-top:10px;color:#888;font-size:13px;">
+            We aim to respond to all privacy-related inquiries within 30 days.
+          </p>
+        </div>
+      </section>
+
+    </article>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Football<span>Bros</span></div>
+    <p>Play Football Bros free online – no download, no sign-up, no fees.</p>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="/">Home</a>
+      <a href="/#game">Play Now</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/privacy.html" class="active">Privacy Policy</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </nav>
+    <p class="footer-copy">
+      © 2025 FootballBros-io.github.io &nbsp;·&nbsp;
+      Football Bros game content belongs to its respective owners.
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>
